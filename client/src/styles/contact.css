@@ -1,0 +1,42 @@
+
+.contact-background {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: url(../images/menuBackground.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;  
+  z-index:-3 
+}
+
+.contact {
+  color: var(--black-text-color)!important;
+  min-height: 94.5vh;
+}
+
+.about-link {
+  color: var(--black-text-color) !important;
+  text-decoration: none !important;
+}
+
+.about-link:hover {
+    text-decoration: underline !important;
+}
+
+.about-icons {
+  color: var(--black-text-color) !important;
+}
+
+.about-icons:hover {
+  transition: transform 0.5s;
+  transform: scale(1.4);
+}
+
+.about-submit {
+  background-color: var(--main-background-color) !important;
+  color: var(--main-text-color) !important;
+}

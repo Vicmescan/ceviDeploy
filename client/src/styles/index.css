@@ -1,0 +1,128 @@
+:root {
+  --main-background-color: rgb(96, 114, 128);
+  --main-text-color: rgb(219, 219, 219);
+  --black-text-color: rgb(22, 22, 22);
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/*  LoadingPage */
+
+.loadingPage-background {
+  background-color: var(--main-background-color);
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loadingPage-Logo {
+  width: 15rem;
+  height: 10rem;
+  -webkit-animation:spin 3s linear infinite;
+  -moz-animation:spin 3s linear infinite;
+  animation:spin 3s linear infinite;
+}
+@-moz-keyframes spin { 
+  100% { -moz-transform: rotateY(360deg); } 
+}
+@-webkit-keyframes spin { 
+  100% { -webkit-transform: rotateY(360deg); } 
+}
+@keyframes spin { 
+  100% { 
+      -webkit-transform: rotateY(360deg); 
+      transform:rotateY(360deg); 
+  } 
+}
+
+/*  Header */
+
+.header {
+  background-color: var(--main-background-color);
+  font-size: 1.3rem;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.75);
+}
+
+.header .logo {
+  width: 10rem;
+  margin: -1.5rem 0 -2.5rem 0  ;
+  /* padding: -1rem 0; */
+  transition: transform 0.5s;
+}
+
+.header .logo:hover {
+  transform: scale(1.2);
+}
+
+.nav-link {
+  color: var(--main-text-color) !important;
+  font-size: 1.7rem !important; ;
+  font-style: italic;
+}
+
+.nav-link:hover {
+  transition: transform 0.5s;
+  transform: scale(1.2);
+}
+
+.nav-dropdown {
+  background-color: var(--main-background-color) !important;
+}
+
+.nav-dropdown-item {
+  color: var(--main-text-color) !important;
+  text-decoration: none;
+}
+
+.nav-dropdown-item:hover {
+  color: var(--main-background-color) !important;
+}
+
+/* Footer */
+
+.footer {
+  background-color: var(--main-background-color);
+  color: var(--main-text-color);
+  box-shadow: 1px -1px 5px rgba(0, 0, 0, 0.75);
+  z-index: 4;
+}
+
+.row-container {
+  width: 100%;
+}
+
+.footer a {
+  color: var(--main-text-color);
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: var(--main-text-color) !important;
+  transition: transform 0.5s;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.footer-link a:hover {
+  color: var(--main-text-color) !important;
+}
+
+.subFooter {
+  z-index: 1;
+}
